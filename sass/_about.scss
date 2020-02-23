@@ -1,0 +1,26 @@
+.skill {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+
+  border-bottom: $line;
+  box-shadow: $shadow-light;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem;
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: $color-primary;
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem;
+    }
+  }
+}

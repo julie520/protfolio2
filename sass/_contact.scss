@@ -1,0 +1,51 @@
+.contact {
+
+  &__title {
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / 2;
+    background-color: $color-grey-light-3;
+    box-shadow: $shadow-dark;
+   
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+    }
+  }
+ 
+  &__form {
+    grid-column: 2 / -1;
+    background-color: $color-grey-dark-1;
+    box-shadow: 16px 12px 14px -11px rgba(0,0,0,0.75);
+    padding:2.5rem 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;
+    }
+    
+  }
+}
+
+.description {
+  display: flex;
+  padding: 1rem;
+  margin-left: 2rem;
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-primary-dark;
+    margin-right: 1rem;
+  }
+}

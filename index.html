@@ -17,32 +17,58 @@
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <img src="/img/logo.png" alt="Logo" class="logo" />
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="/img/icon/symbol-defs.svg#icon-mongodb"></use>
+            </svg>
+          </div>
+          <div class="user-nav__icon-box">
+            <img
+              src="/img/icon/expressjslogo.png"
+              alt="expressjs"
+              class="user-nav__icon"
+            />
+          </div>
+
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="/img/icon/symbol-defs.svg#icon-react"></use>
+            </svg>
+          </div>
+          <div class="user-nav__icon-box">
+            <img src="/img/icon/SVG/icons8-nodejs.svg" alt="nodejs" />
+          </div>
+        </nav>
+      </div>
       <div class="content">
         <nav class="sidebar">
           <ul class="side-nav">
             <li class="side-nav__item">
               <a href="#about" class="side-nav__link">
-              <span class="side-nav__notification">About</span>
-            </a>
+                <span class="side-nav__notification">About</span>
+              </a>
             </li>
             <li class="side-nav__item">
               <a href="#projects" class="side-nav__link">
-              <span class="side-nav__notification">Projects</span>
+                <span class="side-nav__notification">Projects</span>
               </a>
             </li>
             <li class="side-nav__item">
               <a href="#experiences" class="side-nav__link">
-              <span class="side-nav__notification">Experiences</span>
+                <span class="side-nav__notification">Experiences</span>
               </a>
             </li>
             <li class="side-nav__item">
               <a href="#contact" class="side-nav__link">
-              <span class="side-nav__notification">Contact</span>
+                <span class="side-nav__notification">Contact</span>
               </a>
             </li>
             <li class="side-nav__item">
               <a href="#resume" class="side-nav__link">
-              <span class="side-nav__notification">Resume</span>
+                <span class="side-nav__notification">Resume</span>
               </a>
             </li>
           </ul>
@@ -54,18 +80,29 @@
 
         <main class="portfolio-view">
           <!-- landing -->
-          <div class="landing">
-            <div class="video-container">
-              <!-- <video _ngcontent-coverr-redesign-c20="" playsinline="" autoplay="" muted="" loop="" src="/img/video/Workaholic.mp4" class="video-container__content"></video> -->
-              video here!
+          <div class="video">
+            <div class="video__container">
+              <video
+                playsinline=""
+                autoplay=""
+                muted=""
+                loop=""
+                src="/img/video/Workaholic.mp4"
+                class="video__container__content"
+              ></video>
             </div>
-            <div class="video-desc">
-              <h1 class="h1">I want to make things that make a difference!</h1>
+            <div class="video__heading">
+              <h3>
+                &#8220;Knowing is not enough; we must apply. Willing is not
+                enough; we must do.&#8221; <br /><span class="video__author"
+                  >&nbsp; — &nbsp;Johann Wolfgang von Goethe</span
+                >
+              </h3>
             </div>
           </div>
 
           <!-- About -->
-          <div class="about">
+          <div class="about" id="about">
             <h3 class="about__heading">About</h3>
             <p class="about__desc">
               With more than 10 years in full-stack web development experiences,
@@ -75,61 +112,161 @@
               frameworks, I can fully utilise these skills to produce customer
               focused user-friendly application.
             </p>
-            <div class="skills">
-              <ul class="skill">
-                <li class="skill__item">
-                  <svg class="skill__icon">
-                    <use
-                      xlink:href="/img/icon/symbol-defs.svg#icon-react"
-                    ></use>
-                  </svg>
-                  <h6 class="skill__desc">React JS, Redux</h6>
-                </li>
-                <li class="skill__item">
-                  <svg class="skill__icon">
-                    <use
-                      xlink:href="/img/icon/symbol-defs.svg#icon-mongodb"
-                    ></use>
-                  </svg>
-                  <h6 class="skill__desc">Node.js, Express.js, MongoDB</h6>
-                </li>
-                <li class="skill__item">
-                  <svg class="skill__icon">
-                    <use
-                      xlink:href="/img/icon/symbol-defs.svg#icon-css31"
-                    ></use>
-                  </svg>
-                  <h6 class="skill__desc">
-                    CSS, SASS, Flexbox, CSS Grid, Responsive Web Design
-                  </h6>
-                </li>
-                <li class="skill__item">
-                  <svg class="skill__icon">
-                    <use
-                      xlink:href="/img/icon/symbol-defs.svg#icon-javascript"
-                    ></use>
-                  </svg>
-                  <h6 class="skill__desc">Javascript, ECMAScript 6</h6>
-                </li>
-                <li class="skill__item">
-                  <svg class="skill__icon">
-                    <use
-                      xlink:href="/img/icon/symbol-defs.svg#icon-html5"
-                    ></use>
-                  </svg>
-                  <h6 class="skill__desc">HTML5</h6>
-                </li>
-                <li class="skill__item">
-                  <svg class="skill__icon">
-                    <use
-                      xlink:href="/img/icon/symbol-defs.svg#icon-csharp"
-                    ></use>
-                  </svg>
-                  <h6 class="skill__desc">C# .NET, ASP .Net Core, MSSQL</h6>
-                </li>
-              </ul>
+            <ul class="skill">
+              <li class="skill__item">
+                <svg class="skill__icon">
+                  <use xlink:href="/img/icon/symbol-defs.svg#icon-react"></use>
+                </svg>
+                <p class="skill__desc">React JS, Redux</p>
+              </li>
+              <li class="skill__item">
+                <svg class="skill__icon">
+                  <use
+                    xlink:href="/img/icon/symbol-defs.svg#icon-mongodb"
+                  ></use>
+                </svg>
+                <p class="skill__desc">Node.js, Express.js, MongoDB</p>
+              </li>
+              <li class="skill__item">
+                <svg class="skill__icon">
+                  <use xlink:href="/img/icon/symbol-defs.svg#icon-css31"></use>
+                </svg>
+                <p class="skill__desc">
+                  CSS, SASS, Flexbox, CSS Grid, Responsive Web Design
+                </p>
+              </li>
+              <li class="skill__item">
+                <svg class="skill__icon">
+                  <use
+                    xlink:href="/img/icon/symbol-defs.svg#icon-javascript"
+                  ></use>
+                </svg>
+                <p class="skill__desc">Javascript, ECMAScript 6</p>
+              </li>
+              <li class="skill__item">
+                <svg class="skill__icon">
+                  <use xlink:href="/img/icon/symbol-defs.svg#icon-html5"></use>
+                </svg>
+                <p class="skill__desc">HTML5</p>
+              </li>
+              <li class="skill__item">
+                <svg class="skill__icon">
+                  <use xlink:href="/img/icon/symbol-defs.svg#icon-csharp"></use>
+                </svg>
+                <p class="skill__desc">C# .NET, ASP .Net Core, MSSQL</p>
+              </li>
+            </ul>
+          </div>
+          <!-- projects -->
+          <div class="projects" id="projects">
+            <h3 class="projects__title">Projects</h3>
+            <div class="project">
+              <div class="project__item">
+                <h5 class="project__name">Meetup ape</h5>
+                <img
+                  src="/img/meetup-ape-small.png"
+                  alt="meetup ape"
+                  class="project__img"
+                />
+              </div>
+            </div>
+          </div>   
+          
+          <!-- experiences -->
+          <div class="experiences" id="experiences">
+            <h3 class="h3">Experiences</h3>
+            <div class="experience">
+              <div class="experience__company">
+                <figure>
+                  <img src="/img/logo-ecne.png" alt="ECNE logo" class="experience__company-logo">
+                  <figcaption class="experience__company-name">Ecnesoft Pty</figcaption>
+                </figure>
+              </div>
+              <div class="experience__role">Full-Stack Software Developer</div>
+              <div class="experience__jobs">
+                <span class="experience__jobs__title">Integrated point of sales system provider with web-based franchise solutions</span>
+                <ul class="experience__job">
+                  <li class="experience__job__item">Implement franchise back-end APIs and front-end development and apply design principles</li>
+                  <li class="experience__job__item">Back-end business modules and stored procedure development</li>
+                  <li class="experience__job__item">Optimizing applications for maximum performance</li>
+                </ul>
+              </div>
+              <div class="experience__period">May 2017 –Dec 2018</div>
+            </div>
+
+            <div class="experience">
+              <div class="experience__company">
+                <figure>
+                  <img src="/img/logo-bf365.png" alt="BF365 logo" class="experience__company-logo">
+                  <figcaption class="experience__company-name">BF EL Finance Inc.</figcaption>
+                </figure>
+              </div>
+              <div class="experience__role">Web Programmer</div>
+              <div class="experience__jobs">
+                <span class="experience__jobs__title">As growing interests in FinTech industry, BF365 is seeking to, and expanding its online financial services especially peer to peer money lending.</span>
+                <ul class="experience__job">
+                  <li class="experience__job__item">System design and back-end develop with .net environment especially in C#, based on peer to peer lending business process.</li>
+                  <li class="experience__job__item">Plan and manage database backups, and handling customer financial data</li>
+                  <li class="experience__job__item">Manage quality assurance, daily issue reports and organise newly required system functions and processes to further development</li>
+                  <li class="experience__job__item">Integrate third-party APIs to BF365 system.</li>                  
+                </ul>
+              </div>
+              <div class="experience__period">August 2016 – Apr 2017</div>
             </div>
           </div>
+
+          <!-- contact -->
+          <div class="contact" id-"contact">
+            <h3 class="contact__title">Contact Me</h3>
+            <div class="contact__description">
+              <div class="description">
+
+                  <svg class="description__icon">
+                    <use xlink:href="/img/icon/symbol-defs.svg#icon-mobile"></use>
+                  </svg>
+                <p>0426 459 986</p>
+              </div>
+              
+              <div class="description">
+                  <svg class="description__icon">
+                    <use xlink:href="/img/icon/symbol-defs.svg#icon-envelop"></use>
+                  </svg>
+                <p>julie.kim520@gmail.com</p>
+              </div>
+      
+              <div class="description">
+                  <svg class="description__icon">
+                    <use xlink:href="/img/icon/symbol-defs.svg#icon-location"></use>
+                  </svg>
+                <p>14 David st, Richmond 3121, Vic</p>
+              </div>
+      
+              <div class="description" id="resume">
+                  <svg class="description__icon">
+                    <use xlink:href="/img/icon/symbol-defs.svg#icon-file-pdf"></use>
+                  </svg>
+                  <a href="#" class="btn btn--link">Resume download</a>
+              </div>
+      
+            </div>
+  
+            <form action="#" class="contact__form">          
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Your name" name="name" id="name" required />
+                <label for="name" class="form__label">Your name</label>
+              </div>
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Your email" name="email" id="email" required />
+                <label for="email" class="form__label">Your email</label>
+              </div>
+              <div class="form__group">
+                <textarea type="text" class="form__input" placeholder="Your message" name="message" id="message" rows="4" cols="50" required></textarea>
+                <label for="name" class="message"Your message</label>
+              </div>
+              <div class="form__btn">
+                <button class="btn btn--submit">Send</button>
+              </div>
+            </form>
         </main>
       </div>
     </div>
