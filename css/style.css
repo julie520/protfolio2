@@ -154,6 +154,13 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 50%); }
 
+.footer {
+  height: 7rem;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .side-nav {
   font-size: 1.8rem;
   list-style: none;
@@ -205,14 +212,6 @@ h3 {
       .side-nav__link:link, .side-nav__link:visited {
         flex-direction: column;
         padding: 1.5rem .5rem; } }
-
-.legal {
-  font-size: 1.4rem;
-  color: #ccc;
-  text-align: center; }
-  @media only screen and (max-width: 56.25em) {
-    .legal {
-      display: none; } }
 
 .logo {
   height: 3.25rem;
@@ -394,3 +393,8 @@ h3 {
     height: 2.5rem;
     fill: #ba265d;
     margin-right: 1rem; }
+
+.legal {
+  font-size: 1.4rem;
+  color: #ccc;
+  text-align: center; }
