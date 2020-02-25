@@ -25,7 +25,7 @@
   
   &--submit {
     border: none;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(to right, rgba(255,255,255,0.3), rgba(255, 255, 255, 0.7));
     padding: 1.5rem 2rem;
     display: inline-block;
     vertical-align: top;
