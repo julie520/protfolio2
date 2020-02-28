@@ -29,7 +29,7 @@
             <img
               src="/img/icon/expressjslogo.png"
               alt="expressjs"
-              class="user-nav__icon"
+              class="user-nav__icon2"
             />
           </div>
 
@@ -39,7 +39,7 @@
             </svg>
           </div>
           <div class="user-nav__icon-box">
-            <img src="/img/icon/SVG/icons8-nodejs.svg" alt="nodejs" />
+            <img src="/img/icon/SVG/icons8-nodejs.svg" alt="nodejs" class="user-nav__icon2" />
           </div>
         </nav>
       </div>
@@ -157,16 +157,30 @@
           <!-- projects -->
           <div class="projects" id="projects">
             <h3 class="projects__title">Projects</h3>
-            <div class="project">
-              <div class="project__item">
-                <h5 class="project__name">Meetup ape</h5>
-                <img
-                  src="/img/meetup-ape-small.png"
-                  alt="meetup ape"
-                  class="project__img"
-                />
-              </div>
-            </div>
+            <ul class="project">
+              <li class="project__item">
+                <figure class="project__photo">
+                  <img
+                    src="/img/projects/meetup_groups.PNG"
+                    alt="group list"
+                  />
+                  <div class="project__photo-container">
+                    <p>Meetup - find</p>
+                    </div>
+                </figure>
+              </li>
+              <li class="project__item">
+                <figure class="project__photo">
+                  <img
+                    src="/img/projects/meetup_about.PNG"
+                    alt="group details"
+                  />
+                  <div class="project__photo-container">
+                    <p>group details</p>
+                    </div>
+                </figure>
+              </li>            
+              </ul>
           </div>   
           
           <!-- experiences -->
@@ -279,5 +293,10 @@
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>  
   <script src="/js/app.js"></script>
 </html>
